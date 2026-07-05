@@ -52,24 +52,24 @@ UNKNOWN is a sophisticated e-commerce website showcasing a premium skincare seru
 
 ```
 unknown-serum/
-├── index.html              # Main HTML file with all sections
-├── css/
-│   ├── style.css          # Core styling and layout
-│   ├── animations.css     # Keyframe animations and transitions
-│   └── responsive.css     # Mobile and tablet breakpoints
+│── index.html                  # Main HTML file
+│
+├── CSS/
+│   ├── style.css               # Core styling
+│   ├── animations.css          # Animations
+│   └── responsive.css          # Responsive design
+│
 ├── js/
-│   ├── script.js          # Main JavaScript logic
-│   ├── cursor.js          # Custom cursor interactions
-│   ├── particles.js       # Particle system for hero background
-│   └── scroll.js          # Scroll-triggered animations
-└── assets/
-    ├── images/            # Product and brand images
-    ├── videos/            # Background or product videos
-    ├── icons/
-    │   └── icons.svg      # SVG symbol library for icons
-    └── fonts/             # Custom fonts (if used)
-```
-
+│   ├── script.js               # Main JavaScript
+│   ├── cursor.js               # Custom cursor
+│   ├── particles.js            # Particle effects
+│   └── scroll.js               # Scroll animations
+│
+├── assets/
+│   ├── images/                 # Images
+│   └── icons.svg               # SVG icons
+│
+└── Readme.md
 ## Getting Started
 
 ### Prerequisites
