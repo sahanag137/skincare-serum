@@ -1,0 +1,46 @@
+/* 
+    UNKNOWN - Premium Skincare Serum
+    Responsive Stylesheet
+*/
+
+@media (max-width: 1200px) {
+    .container { padding: 0 30px; }
+    .hero h1 { font-size: 6rem; }
+    .about-grid { gap: 40px; }
+}
+
+@media (max-width: 992px) {
+    section { padding: 100px 0; }
+    .hero h1 { font-size: 4rem; }
+    .about-grid { grid-template-columns: 1fr; }
+    .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+    .ingredients-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    
+    .mobile-menu-btn {
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+    }
+
+    .hero h1 { font-size: 3rem; }
+    .hero-bottle { width: 300px; }
+    
+    .benefits-grid { grid-template-columns: 1fr; }
+    .ingredients-grid { grid-template-columns: 1fr; }
+    
+    .footer-grid { grid-template-columns: 1fr; gap: 40px; }
+    .footer-bottom { flex-direction: column; gap: 20px; text-align: center; }
+}
+
+@media (max-width: 480px) {
+    .hero h1 { font-size: 2.5rem; }
+    .btn { padding: 15px 30px; width: 100%; }
+    .hero-btns { flex-direction: column; }
+    .section-title h2 { font-size: 2.5rem; }
+}

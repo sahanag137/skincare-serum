@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNKNOWN | Reveal What Skin Can Become</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-logo">UNKNOWN</div>
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">UNKNOWN</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#ingredients">Ingredients</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#buy" class="btn btn-outline" style="padding: 10px 25px; font-size: 0.7rem;">Buy Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-content">
+            <h1 class="reveal-text">UNKNOWN</h1>
+            <p>"Reveal What Skin Can Become"</p>
+            <div class="hero-btns">
+                <a href="#about" class="btn btn-primary">Explore</a>
+                <a href="#buy" class="btn btn-outline">Buy Now</a>
+            </div>
+        </div>
+        <!-- Bottle Mockup (Using a placeholder SVG for the serum bottle ) -->
+        <div class="hero-bottle floating">
+            <svg viewBox="0 0 200 500" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="bottleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.2" />
+                        <stop offset="50%" style="stop-color:#ffffff;stop-opacity:0.4" />
+                        <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.2" />
+                    </linearGradient>
+                </defs>
+                <rect x="50" y="100" width="100" height="300" rx="20" fill="url(#bottleGrad )" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+                <rect x="75" y="50" width="50" height="50" rx="5" fill="rgba(255,255,255,0.8)"/>
+                <path d="M75 100 Q100 80 125 100" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal-left">
+                    <img src="assets/images/about-model.jpg" alt="Skincare Model">
+                </div>
+                <div class="about-content reveal-right">
+                    <div class="section-title" style="text-align: left;">
+                        <h2>The Science of Silence</h2>
+                        <p>We believe in results that speak for themselves. UNKNOWN is a molecular breakthrough in skincare, designed to synchronize with your skin's natural circadian rhythm.</p>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-card glass-card">
+                            <span class="stat-number" data-target="99" data-suffix="%">0%</span>
+                            <span class="stat-label">Satisfaction</span>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <span class="stat-number" data-target="50" data-suffix="K+">0K+</span>
+                            <span class="stat-label">Customers</span>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <span class="stat-number" data-target="100" data-suffix="%">0%</span>
+                            <span class="stat-label">Cruelty Free</span>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <span class="stat-number" data-target="24" data-suffix="h">0h</span>
+                            <span class="stat-label">Hydration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Beyond Surface Level</h2>
+                <p>Advanced formulation for transformative results.</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card glass-card reveal">
+                    <h3>Deep Hydration</h3>
+                    <p>Multi-weight hyaluronic acid molecules penetrate deep into the dermis.</p>
+                </div>
+                <div class="benefit-card glass-card reveal" style="transition-delay: 0.2s;">
+                    <h3>Anti-Aging</h3>
+                    <p>Stimulates collagen production to reduce fine lines and wrinkles.</p>
+                </div>
+                <div class="benefit-card glass-card reveal" style="transition-delay: 0.4s;">
+                    <h3>Skin Repair</h3>
+                    <p>Ceramides and peptides rebuild the skin's natural barrier.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients Section -->
+    <section id="ingredients">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>The Elements</h2>
+                <p>Hover to discover the power of each ingredient.</p>
+            </div>
+            <div class="ingredients-grid">
+                <!-- Ingredient 1 -->
+                <div class="ingredient-card reveal">
+                    <div class="ingredient-inner">
+                        <div class="ingredient-front">
+                            <h3>Niacinamide</h3>
+                        </div>
+                        <div class="ingredient-back">
+                            <p>Refines pores and balances oil production for a smooth finish.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ingredient 2 -->
+                <div class="ingredient-card reveal" style="transition-delay: 0.1s;">
+                    <div class="ingredient-inner">
+                        <div class="ingredient-front">
+                            <h3>Vitamin C</h3>
+                        </div>
+                        <div class="ingredient-back">
+                            <p>Potent antioxidant that brightens skin tone and fades dark spots.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ingredient 3 -->
+                <div class="ingredient-card reveal" style="transition-delay: 0.2s;">
+                    <div class="ingredient-inner">
+                        <div class="ingredient-front">
+                            <h3>Retinol</h3>
+                        </div>
+                        <div class="ingredient-back">
+                            <p>Accelerates cell turnover to reveal fresher, younger-looking skin.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ingredient 4 -->
+                <div class="ingredient-card reveal" style="transition-delay: 0.3s;">
+                    <div class="ingredient-inner">
+                        <div class="ingredient-front">
+                            <h3>Peptides</h3>
+                        </div>
+                        <div class="ingredient-back">
+                            <p>Building blocks that signal skin to produce more collagen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Section -->
+    <section id="results">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Proven Transformation</h2>
+                <p>Real results after 28 days of consistent use.</p>
+            </div>
+            <div class="comparison-container reveal">
+                <img src="assets/images/results-after.png" class="comparison-img img-after" alt="After">
+                <img src="assets/images/results-before.jpg" class="comparison-img img-before" alt="Before">
+                <div class="comparison-slider">
+                    <div class="slider-handle">↔</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Our Journey</h2>
+                <p>From molecular research to your skin.</p>
+            </div>
+            <div class="timeline-wrapper reveal">
+                <div class="timeline-line"></div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Research</h3>
+                        <p>3 years of clinical studies on skin circadian rhythms.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Development</h3>
+                        <p>Perfecting the stable Vitamin C and Hyaluronic complex.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Testing</h3>
+                        <p>Dermatologist-approved trials with 5,000+ volunteers.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <h3>Launch</h3>
+                        <p>Bringing the future of skincare to the world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Voices of UNKNOWN</h2>
+                <p>Real stories from our global community.</p>
+            </div>
+            <div class="testimonial-slider reveal">
+                <div class="testimonial-card glass-card">
+                    <div class="rating">★★★★★</div>
+                    <p>"The only serum that actually changed my skin texture. It's like magic in a bottle."</p>
+                    <div class="user">- Sarah J., New York</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Visual Narrative</h2>
+                <p>The aesthetic of UNKNOWN.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal"><img src="assets/images/hero-bottle.jpg" alt="Serum"></div>
+                <div class="gallery-item reveal" style="transition-delay: 0.1s;"><img src="assets/images/texture-1.jpg" alt="Texture"></div>
+                <div class="gallery-item reveal" style="transition-delay: 0.2s;"><img src="assets/images/texture-2.jpg" alt="Bottle"></div>
+                <div class="gallery-item reveal" style="transition-delay: 0.3s;"><img src="assets/images/about-model.jpg" alt="Application"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Common Inquiries</h2>
+                <p>Everything you need to know about UNKNOWN.</p>
+            </div>
+            <div class="faq-accordion reveal">
+                <div class="faq-item glass-card">
+                    <div class="faq-question">How often should I use the serum? <span>+</span></div>
+                    <div class="faq-answer">We recommend using it twice daily, morning and night, after cleansing.</div>
+                </div>
+                <div class="faq-item glass-card">
+                    <div class="faq-question">Is it suitable for sensitive skin? <span>+</span></div>
+                    <div class="faq-answer">Yes, our formula is pH-balanced and dermatologist-tested for all skin types.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="glass-card reveal" style="max-width: 800px; margin: 0 auto;">
+                <div class="section-title">
+                    <h2>Connect With Us</h2>
+                    <p>Join the UNKNOWN community.</p>
+                </div>
+                <form id="contact-form">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                        <input type="text" placeholder="Name" class="btn btn-outline" style="text-transform: none; text-align: left; cursor: text;">
+                        <input type="email" placeholder="Email" class="btn btn-outline" style="text-transform: none; text-align: left; cursor: text;">
+                    </div>
+                    <textarea placeholder="Message" class="btn btn-outline" style="width: 100%; height: 150px; text-transform: none; text-align: left; margin-bottom: 20px; border-radius: 20px; cursor: text;"></textarea>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <span class="footer-logo">UNKNOWN</span>
+                    <p style="color: var(--text-muted);">The future of skincare is here. Science-backed, luxury-focused, and results-driven.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">Serums</a></li>
+                        <li><a href="#">Kits</a></li>
+                        <li><a href="#">Gifts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Newsletter</h4>
+                    <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 15px;">Subscribe for exclusive updates.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Email">
+                        <button class="btn btn-primary" style="padding: 10px 20px;">Join</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 UNKNOWN SKINCARE. ALL RIGHTS RESERVED.</p>
+                <div class="socials">
+                    <a href="#" style="margin-left: 20px;">INSTAGRAM</a>
+                    <a href="#" style="margin-left: 20px;">TIKTOK</a>
+                    <a href="#" style="margin-left: 20px;">PINTEREST</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
